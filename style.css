@@ -211,6 +211,37 @@ header .navbar {
     border-radius: var(--border-raduis-circle);
 }
 
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link{
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover{
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width: 900px) {
 
     :root {
@@ -280,7 +311,8 @@ header .navbar {
 
     }
 
-    .hero-section .hero-details :is(.subtitle, .description){
+    .hero-section .hero-details :is(.subtitle, .description),
+    .about-section .about-details{
         max-width: 100%;
     }
 
@@ -293,4 +325,15 @@ header .navbar {
         margin-right: 0;
     }
 
+    .about-section .section-content{
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
 }
